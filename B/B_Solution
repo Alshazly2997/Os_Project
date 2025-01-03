@@ -1,0 +1,51 @@
+Upon creation of a new process via the fork() system call within the Linux operating system utilizing the GNU C Library (glibc), the emergent child process exhibits distinct characteristics in relation to its parent process. These characteristics are outlined as follows: 
+
+Unique Identity and Resources: 
+
+ Process ID (PID): A unique process ID is assigned to the child process, ensuring its distinction from all other processes and process groups as defined by the setpgid(2) function. 
+
+Parent Process ID (PPID): The child process retains the process ID of its parent process as its PPID. 
+
+Resource Utilization: Metrics pertaining to resource consumption, including process resource utilization as measured by the getrusage(2) function and CPU time as measured by the times(2) function, are initialized to zero for the child process. 
+
+ 
+
+ Inherited Attributes: 
+
+ Open File Descriptors: The child process inherits duplicates of all open file descriptors present within the parent process. These descriptors, both in the parent and child, reference the same underlying open file description as defined by the open(2) function. Consequently, they share status flags, file offset, and signal-driven I/O attributes as managed by the fcntl(2) function. 
+
+Open Message Queue Descriptors: Mirroring the behavior of file descriptors, the child process inherits copies of all open message queue descriptors from the parent process. These descriptors share the same flags as defined within the mq_overview(7) documentation. 
+
+Open Directory Streams: The child process inherits copies of open directory streams initiated by the opendir(3) function. However, it is important to note that, contrary to the behavior suggested by the POSIX.1-2001 standard, Linux systems utilizing glibc do not propagate directory stream positioning to the child process. 
+
+ 
+
+Non-Inherited Attributes: 
+
+ Memory Locks: Memory locks established by the parent process using functions like mlock(2) and mlockall(2) are not inherited by the child process. 
+
+Pending Signals: The child process commences execution with an empty set of pending signals, as managed by the sigpending(2) function. 
+
+Semaphore Adjustments: Any adjustments made to semaphores by the parent process, typically using the semop(2) function, are not reflected in the child process. 
+
+Record Locks: The child process does not inherit any record locks held by the parent process, which are typically managed through the fcntl(2) function. 
+
+Timers: Timers established within the parent process using functions like setitimer(2), alarm(2), and timer_create(2) are not inherited by the child process. 
+
+Asynchronous I/O: Any outstanding asynchronous I/O operations or contexts present within the parent process, often initiated by functions like aio_read(3) and aio_write(3), are not inherited by the child process. 
+
+Directory Change Notifications: The child process does not inherit any directory change notifications, commonly referred to as dnotify, from its parent process. 
+
+Termination Signal Upon Parent Death: The PR_SET_PDEATHSIG setting, managed through the prctl(2) function, is reset within the child process. This prevents the child process from receiving a termination signal upon the termination of its parent process. 
+
+Memory Mappings with MADV_DONTFORK: Memory mappings designated with the MADV_DONTFORK flag via the madvise(2) function are not inherited by the child process. 
+
+  
+
+Other Key Points: 
+
+  
+
+Termination Signal: By default, the termination signal for the child process is SIGCHLD. 
+
+Single Thread Inheritance: The child process initiates its execution with only the thread that invoked the fork() system call. However, it is crucial to note that the child process receives a complete replica of the parent process's virtual address space. This includes the state of synchronization primitives, such as mutexes and condition variables. To address potential issues arising from this inheritance, the pthread_atfork(3) function can be employed. 
