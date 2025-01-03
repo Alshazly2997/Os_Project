@@ -116,7 +116,7 @@ Note: Actual PIDs will vary with each execution.
 
 ## Compilation and Execution
 ```bash
-gcc -o fork_program program.c
-./fork_program
+gcc -o project_a_program a.c
+./project_a_program
 ```
 Note: Must be compiled and run on a UNIX-like system (Linux, macOS, etc.) as `unistd.h` is POSIX-specific.
