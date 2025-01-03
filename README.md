@@ -10,6 +10,8 @@ Operating Systems Lab #11: `Creating a new process: Handling Signals`.
 
 - Alshazly Mohamed Abdalaziz Yasin  17-305
 
+- Ahmed Obied Eltreifi Obeid 17-308
+
 # Overview
 This is a repostory containg the soultion of the lab assingmnet #11 of th Operating Systems course
 
