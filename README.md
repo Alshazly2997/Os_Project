@@ -6,9 +6,10 @@ Operating Systems Lab #11: `Creating a new process: Handling Signals`.
 # Paricipants
 - Ahmed Abdelghani Abdelgalil Hassan 17-303
 
-- Abdallah Mustafa Yousif Mohammed 16-311
+- Abdallah Mustafa Yousif Mohammed 16-311![photo_2025-01-08_21-50-33](https://github.com/user-attachments/assets/b888813f-9c9b-4fe7-9bc3-83f52526ffe4)
 
-- Alshazly Mohamed Abdalaziz Yasin  17-305
+
+- Alshazly Mohamed Abdalaziz Yasin  17-305 
 
 - Ahmed Obied Eltreifi Obeid 17-308
 
