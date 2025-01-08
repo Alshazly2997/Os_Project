@@ -15,7 +15,7 @@ Operating Systems Lab #11: `Creating a new process: Handling Signals`.
 # Overview
 This is a repostory containg the solution of project #11 of the Operating Systems course
 
-Each folder contain the soultion of the corresponding letter problem statment alongside with it's `README.md` and `MAKEFILE` for both A and C 
+Each folder contain the solution of the corresponding letter problem statment alongside with it's `README.md` and `MAKEFILE` for both A and C 
 
 
 # Objectives
