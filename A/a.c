@@ -6,8 +6,8 @@ int main(){
  
     /*after call fork() function a child procrss will born and will have it's own copy for data, stack, heap, and the  
     code will execute separatly*/ 
-    int fork_value = fork(); // fork() will return -1 for errors, 0 for new process and the PID of the new process to the old process 
     int N; 
+    int fork_value = fork(); // fork() will return -1 for errors, 0 for new process and the PID of the new process to the old process 
     int sleep_time = 5; // number of seconds to sleep 
  
     if (fork_value == -1) { 
