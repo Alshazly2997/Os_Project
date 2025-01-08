@@ -13,7 +13,7 @@ Operating Systems Lab #11: `Creating a new process: Handling Signals`.
 - Ahmed Obied Eltreifi Obeid 17-308
 
 # Overview
-This is a repostory containg the soultion of the lab assingmnet #11 of th Operating Systems course
+This is a repostory containg the solution of project #11 of the Operating Systems course
 
 Each folder contain the soultion of the corresponding letter problem statment alongside with it's `README.md` and `MAKEFILE` for both A and C 
 
