@@ -15,15 +15,15 @@ Operating Systems Lab #11: `Creating a new process: Handling Signals`.
 - Ahmed Obied Eltreifi Obeid 17-308
 
 # Overview
-This is a repostory containg the solution of project #11 of the Operating Systems course
+This is a repository containing the solution of lab #11 of the Operating Systems course
 
-Each folder contain the solution of the corresponding letter problem statment alongside with it's `README.md` and `MAKEFILE` for both A and C 
+Each folder contains the solution of the corresponding letter problem statement alongside with its `README.md` and `MAKEFILE` for both A and C 
 
 
 # Objectives
 - Learn	about	different	ways	to	create	processes	in	Linux.
 - Learn	how	to	handle	some	types	of	signals	in	your	program.
-- Make	sure	that	you	understand	the	environment	of	created	
+- Make	sure	that	you	understand	the	environment		created	
 processes
 
 # Problem Statment A
