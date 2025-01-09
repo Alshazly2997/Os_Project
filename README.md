@@ -4,15 +4,11 @@ Department of Computer Science.
 Operating Systems Lab #11: `Creating a new process: Handling Signals`.
 
 # Paricipants
-- Ahmed Abdelghani Abdelgalil Hassan 17-303 ![WhatsApp Image 2025-01-09 at 18 20 14_2a1b4316](https://github.com/user-attachments/assets/8dccc047-1b8b-48b1-ab87-81ca4c2b0085)
-
-
-- Abdallah Mustafa Yousif Mohammed 16-311 ![WhatsApp Image 2025-01-09 at 18 24 05_d0b7d910](https://github.com/user-attachments/assets/3f763375-5940-406c-898b-b45ab9c991ac)
-
-
-- Alshazly Mohamed Abdalaziz Yasin  17-305 ![photo_2025-01-08_21-50-33](https://github.com/user-attachments/assets/b888813f-9c9b-4fe7-9bc3-83f52526ffe4)
-
+- Ahmed Abdelghani Abdelgalil Hassan 17-303
+- Abdallah Mustafa Yousif Mohammed 16-311
+- Alshazly Mohamed Abdalaziz Yasin  17-305
 - Ahmed Obied Eltreifi Obeid 17-308
+
 
 # Overview
 This is a repository containing the solution of lab #11 of the Operating Systems course
