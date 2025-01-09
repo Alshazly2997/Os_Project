@@ -162,6 +162,7 @@ gcc -g -o c_program c.c
 ./signal_program
 
 # Expected Output
+# Note: the actual PIDs may vary with each execution.
 An alarm for 2 seconds is going to be set
 Child inherited the signal handler from the parent.
 The process ID is: [PID]
